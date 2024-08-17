@@ -1,0 +1,57 @@
+#ubicacion {
+    background: white;
+    color: rgb(2, 223, 186);
+    text-align: center;
+    padding: 45px;
+}
+
+#ubicacion h3 {
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+#ubicacion .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding: 15px;
+}
+
+#ubicacion .contenedor iframe {
+    width: 50%;
+    border: 5px solid black;
+   
+}
+
+
+#ubicacion .contenedor p {
+    padding: 40px;
+    width: 50%;
+    text-align: left;
+}
+
+/*----------Responsive----------*/
+
+
+/*Dispositivo movil*/
+
+@media(min-width:420px) {
+    #ubicacion .contenedor iframe{  
+        height: 350px;
+    }
+    
+}
+@media(min-width:768px) {
+    #ubicacion .contenedor iframe{
+        height: 400px;
+    }
+}
+
+/*Escritorio*/
+
+@media(min-width:1024px) {
+    #ubicacion .contenedor iframe{
+        height: 400px;
+    }
+}

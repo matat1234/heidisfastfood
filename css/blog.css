@@ -1,0 +1,30 @@
+#saludo h2{
+    padding-left: 15px ;
+    text-transform: uppercase;
+    
+}
+#saludo{
+    text-align: center;
+}
+#menus{
+    padding: 50px;
+}
+#menus h4{
+    text-align: center;
+}
+#menus .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.im{
+    width: 250px;
+    height: 150px;
+    max-width: 280px;
+    margin:15px 
+   
+    
+}
+.im:hover{
+    cursor: pointer;
+}

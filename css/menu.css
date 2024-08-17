@@ -1,0 +1,85 @@
+#menu-bar {
+    display: none;
+}
+
+header label {
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    
+}
+
+.menuces {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(105, 53, 16);
+    transition: all .5s;
+    transform: translateX(-100%);
+    top: 50px;
+    left: 0;
+}
+
+.menuces a {
+    display: block;
+    color: white;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border: 5px solid rgb(255, 255, 95);
+}
+
+.menuces a:hover {
+    background-color: rgb(190, 39, 39);
+    color: darkgreen;
+    border-radius: 45px;
+    text-shadow: 2px 2px 8px green;
+}
+
+#menu-bar:checked~.menuces {
+    transform: translateX(0%);
+}
+
+
+/*----------Responsive----------*/
+
+
+/*Dispositivo movil*/
+
+@media(min-width:420px) {
+    .menuces {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/*Tablets*/
+
+@media(min-width:768px) {
+    .menuces {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/*Escritorio*/
+
+@media(min-width:1024px) {
+    .menuces {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+        background-color: rgb(204, 124, 66);
+    }
+    .menuces a {
+        border: none;
+    }
+    header label {
+        display: none;
+    }
+}

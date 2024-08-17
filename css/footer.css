@@ -1,0 +1,41 @@
+footer{
+    background-color: blue;
+}
+
+footer .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 30px;
+    color: white;
+}
+.copy{
+    font-size: 20px;
+    padding: 20px;
+}
+.red{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+.red a{
+    color: white;
+    text-decoration: none;
+}
+.red a:hover{
+    color: red;
+    cursor: pointer;
+}
+/*----------Responsive----------*/
+/*Tablets*/
+@media(min-width:768px){
+    .red{
+        width: auto;
+    }
+    footer .contenedor{
+        justify-content: space-between;
+
+    }
+
+    
+}
